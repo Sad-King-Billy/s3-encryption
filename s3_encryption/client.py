@@ -28,7 +28,7 @@ class S3EncryptionClient(object):
            'Key': Key,
            'Body': context['body'],
            'Metadata': context['envelope'],
-           ServerSideEncryption: 'AES256'
+           'ServerSideEncryption': 'AES256'
         }
         if ACL is not None:
             kwargs['ACL'] = ACL
